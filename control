@@ -2,7 +2,7 @@ Package: com.itsjafer.bigpipenergy
 Name: BigPiPEnergy
 Depends: mobilesubstrate
 Version: 0.0.1
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm, ws.hbang.common (>= 1.11)
 Description: Removes the max size on Picture in Picture.
 Maintainer: itsjafer <itsjafer@gmail.com>
 Author: itsjafer <itsjafer@gmail.com>
