@@ -5,6 +5,15 @@ It also works on iPhones that have used other tweaks to enable PiP (such as ipad
 
 Note: I've ONLY tested it on my iPhone X; the plan is to test this on an iPad Pro once the uncover jailbreak is released.
 
+## Examples
+
+Note that this example is on iPhone so its usefulness is not as pronounced.
+
+![before tweak](before.gif)
+Before the tweak is enabled, the PiP is restricted by iOS and can't get much bigger.
+![after tweak](after.gif)
+After being enabled, the PiP can become huge (to the the point that its not really useful on iPhones)
+
 ## How it was made
 
 This was only my second tweak so for any other beginners, I will outline the steps I took to reverse engineer the solution:
