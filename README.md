@@ -3,6 +3,8 @@ Tweak that removes the iOS restriction on PictureInPicture (PiP) size. This was 
 
 It also works on iPhones that have used other tweaks to enable PiP (such as ipadify or ForceInPicture).
 
+Note: I've ONLY tested it on my iPhone X; the plan is to test this on an iPad Pro once the uncover jailbreak is released.
+
 ## How it was made
 
 This was only my second tweak so for any other beginners, I will outline the steps I took to reverse engineer the solution:
