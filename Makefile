@@ -6,6 +6,7 @@ TWEAK_NAME = BigPiPEnergy
 
 BigPiPEnergy_FILES = tweak.xm
 BigPiPEnergy_CFLAGS = -fobjc-arc
+BigPiPEnergy_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += bigpipenergy

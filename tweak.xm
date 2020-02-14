@@ -1,13 +1,6 @@
-static BOOL enabled = YES;
+#import <Cephei/HBPreferences.h>
 
-static BOOL tweakEnabled() {
-    NSDictionary *settings = [NSMutableDictionary dictionaryWithContentsOfFile:
-        @"/var/mobile/Library/Preferences/com.itsjafer.bigpipenergy.plist"];
-
-    // we're defaulting to true but this might need to be changed if users
-    // find it annoying
-    return settings[@"enabled"] ? [settings[@"enabled"] boolValue] : YES; 
-}
+static BOOL enabled;
 
 %hook SBPIPContentViewLayoutSettings
 
@@ -36,6 +29,7 @@ static BOOL tweakEnabled() {
 %end
 
 %ctor {
-	enabled = tweakEnabled();
+	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"com.itsjafer.bigpipenergy"];
+	[prefs registerBool:&enabled default:YES forKey:@"enabled"];
 	%init;
 }
