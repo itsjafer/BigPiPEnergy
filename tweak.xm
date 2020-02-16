@@ -1,10 +1,13 @@
 #import <Cephei/HBPreferences.h>
 
-static BOOL enabled;
+BOOL enabled;
 
 %hook SBPIPContentViewLayoutSettings
 
 +(CGSize)maximumContentViewSizeForAspectRatio:(CGSize)arg1 {
+	if (!enabled) {
+		return %orig;
+	}
 	return arg1;
 }
 
