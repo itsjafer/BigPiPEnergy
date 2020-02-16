@@ -1,3 +1,4 @@
+ARCHS = arm64e arm64
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = bigpipenergy
