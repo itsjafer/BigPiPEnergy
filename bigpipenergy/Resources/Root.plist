@@ -36,6 +36,24 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
+			<string>This option is experimental. When enabled, the default interface buttons will not be available in PiP. IMPORTANT: to exit out of Picture-in-Picture, double tap with two fingers on the PiP!</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.itsjafer.bigpipenergy</string>
+			<key>key</key>
+			<string>positionEnabled</string>
+			<key>label</key>
+			<string>Position PiP anywhere</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
 			<string>Made by itsjafer</string>
 		</dict>
 		<dict>
@@ -52,6 +70,6 @@
 		</dict>
 	</array>
 	<key>title</key>
-	<string>bigpipenergy</string>
+	<string>Big PiP Energy</string>
 </dict>
 </plist>
